@@ -1,11 +1,11 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fdfdfd;
-  color: #333;
+  background-color: #f8f9fa;
+  color: #1e2a38;
 }
 
 .hero {
-  background: linear-gradient(to right, #0d6efd, #6610f2);
+  background: linear-gradient(to right, #1e2a38, #1abc9c);
 }
 
 h2 {
@@ -13,15 +13,19 @@ h2 {
   margin-bottom: 20px;
 }
 
-.card {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  border: none;
+ul li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer {
-  background-color: #0d6efd;
-}
-
-.badge {
-  font-size: 0.9em;
+  background-color: #1e2a38;
 }
