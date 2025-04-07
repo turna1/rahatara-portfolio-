@@ -1,0 +1,27 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: none;
+}
+
+footer {
+  background-color: #0d6efd;
+}
+
+.badge {
+  font-size: 0.9em;
+}
