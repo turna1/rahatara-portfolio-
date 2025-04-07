@@ -12,8 +12,8 @@
       color: #212529;
     }
     .hero-img {
-      max-width: 200px;
-      border-radius: 10px;
+      max-width: 180px;
+      border-radius: 50%;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
     .section-title {
@@ -32,6 +32,10 @@
       text-decoration: underline;
       color: #0d6efd;
     }
+    .social-card a {
+      margin-right: 10px;
+      text-decoration: none;
+    }
     footer {
       background-color: #fff;
       border-top: 1px solid #dee2e6;
@@ -43,26 +47,33 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">Rahatara Ferdousi</a>
-    <div>
-      <a class="nav-link d-inline" href="https://www.linkedin.com/in/rahatara-ferdousi-764405118/" target="_blank">LinkedIn</a>
-      <a class="nav-link d-inline" href="https://github.com/turna1" target="_blank">GitHub</a>
-      <a class="nav-link d-inline" href="https://scholar.google.ca/citations?user=zoDCSycAAAAJ&hl=en" target="_blank">Google Scholar</a>
-      <a class="nav-link d-inline" href="https://medium.com/@turna.fardousi" target="_blank">Medium</a>
-      <a class="nav-link d-inline" href="https://huggingface.co/Rahatara" target="_blank">HuggingFace</a>
-    </div>
   </div>
 </nav>
 
 <div class="container text-center py-5">
   <img src="IMG_5149.jpeg" class="hero-img mb-3" alt="Rahatara Ferdousi"/>
   <h1 class="fw-bold">Dr. Rahatara Ferdousi</h1>
-  <p class="lead">AI Researcher | Digital Twin Innovator | Public Speaker</p>
+  <p class="lead">AI Researcher | Digital Twin Innovator | Speaker</p>
+
+  <div class="card p-3 shadow-sm mx-auto" style="max-width: 480px;">
+    <div class="d-flex justify-content-center flex-wrap">
+      <a href="https://www.linkedin.com/in/rahatara-ferdousi-764405118/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/turna1" target="_blank">GitHub</a>
+      <a href="https://scholar.google.ca/citations?user=zoDCSycAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      <a href="https://medium.com/@turna.fardousi" target="_blank">Medium</a>
+      <a href="https://huggingface.co/Rahatara" target="_blank">HuggingFace</a>
+    </div>
+  </div>
 </div>
 
 <div class="container mb-5">
   <h2 class="section-title">About Me</h2>
-  <p>I’m a Ph.D. researcher at the University of Ottawa with over 20 AI publications and 500+ citations. My work bridges AI, Digital Twin technologies, and real-world applications in healthcare, railway safety, and the metaverse. I collaborate with the NRC and regularly speak at global conferences, including DevFest and Women in Tech. </p>
+  <p>Hi, it's Rahatara here — I hold a doctorate in Electrical and Computer Engineering from the University of Ottawa, where I focused on building AI-powered Digital Twins for real-world challenges in railway safety and healthcare. I’ve collaborated with the National Research Council Canada and presented my research at top international conferences. My work sits at the intersection of machine learning, computer vision, and edge deployment — and I'm passionate about building technology that’s both cutting-edge and impactful.</p>
+  <p>I’ve published over 20 peer-reviewed papers with 500+ citations, taught AI and Python programming, and regularly speak at DevFest, Women in Tech, and other community conferences. I'm currently looking for opportunities where I can bring AI research into production and scale real-world solutions.</p>
 </div>
+
+<!-- (Publications, Medium, GitHub, Awards & Footer come here — same as before) -->
+  
 
 <div class="container mb-5">
   <h2 class="section-title">Publications</h2>
@@ -133,10 +144,19 @@
   </ul>
 </div>
 
-<footer class="text-center py-4">
-  <p>Contact: <a href="mailto:turna.fardousi@gmail.com">turna.fardousi@gmail.com</a> | Ottawa, Canada</p>
-  <p>© 2025 Rahatara Ferdousi</p>
-</footer>
+<!-- Contact -->
+    <section class="text-center bg-light py-5">
+      <h2 class="text-primary">Let’s Connect</h2>
+      <p class="lead">Open to research roles, academic opportunities, and AI collaboration. Feel free to reach out!</p>
+      <a href="mailto:turna.fardousi@gmail.com" class="btn btn-primary btn-lg">Email Me</a>
+    </section>
 
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3">
+    <p class="mb-0">© 2025 Rahatara Ferdousi — All rights reserved</p>
+  </footer>
+  
 </body>
 </html>
