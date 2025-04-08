@@ -73,31 +73,63 @@
 <div class="container mb-5">
   <h2 class="section-title">About Me</h2>
 
-  <section id="about" style="font-family: 'Segoe UI', 'Roboto', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.7; color: #1a1a1a;">
+  <section id="about" style="font-family: 'Segoe UI', 'Roboto', sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.7; color: #1a1a1a; animation: fadeIn 1s ease-in;">
     <p>Hello, I’m <strong>Rahatara</strong> — an AI researcher with a Ph.D. in Electrical and Computer Engineering from the University of Ottawa, specializing in <strong>AI-powered Digital Twins</strong> for railway safety and healthcare.</p>
 
-    <p>My research journey began with structured electronic health record (EHR) data. Over time, while working with the 
-      <a href="https://mcrlab.net/" target="_blank" style="color: #005f73; text-decoration: none; font-weight: bold;">
-        Multimedia Communications Research Laboratory (MCRLab)
-      </a>, I transitioned to handling complex, heterogeneous datasets from diverse sources. This evolution led me to design and develop advanced Digital Twin frameworks that integrate machine learning, computer vision, and edge deployment.
-    </p>
+    <div id="more-about" style="display: none;">
+      <p>My research journey began with structured electronic health record (EHR) data. Over time, while working with the 
+        <a href="https://mcrlab.net/" target="_blank" style="color: #005f73; text-decoration: none; font-weight: bold;">
+          Multimedia Communications Research Laboratory (MCRLab)
+        </a>, I transitioned to handling complex, heterogeneous datasets from diverse sources. This evolution led me to design and develop advanced Digital Twin frameworks that integrate machine learning, computer vision, and edge deployment.
+      </p>
 
-    <p>In collaboration with the 
-      <a href="https://nrc.canada.ca/en" target="_blank" style="color: #005f73; text-decoration: none; font-weight: bold;">
-        National Research Council Canada (NRC)
-      </a>, I presented my research at leading international conferences and have authored over 20 peer-reviewed publications, garnering 500+ citations.
-    </p>
+      <p>In collaboration with the 
+        <a href="https://nrc.canada.ca/en" target="_blank" style="color: #005f73; text-decoration: none; font-weight: bold;">
+          National Research Council Canada (NRC)
+        </a>, I presented my research at leading international conferences and have authored over 20 peer-reviewed publications, garnering 500+ citations.
+      </p>
 
-    <p>To address data scarcity challenges in real-world applications, I developed synthetic datasets, demonstrating how synthetic data can promote responsible AI by reducing bias, enhancing data integrity, and lowering preparation costs. I believe that, much like energy transformation principles, data can be generated from one form to another to drive innovation.</p>
+      <p>To address data scarcity challenges in real-world applications, I developed synthetic datasets, demonstrating how synthetic data can promote responsible AI by reducing bias, enhancing data integrity, and lowering preparation costs. I believe that, much like energy transformation principles, data can be generated from one form to another to drive innovation.</p>
 
-    <p>Beyond research, I have taught AI and Python programming and have been a speaker at tech sessions and workshops organized by communities such as 
-      <strong>Google Developer Group</strong>, <strong>Microsoft Reactor</strong>, and <strong>ACM Women</strong>.
-    </p>
+      <p>I also serve as a technical committee member for the 
+        <a href="https://ctsoc.ieee.org/" target="_blank" style="color: #005f73; text-decoration: none; font-weight: bold;">
+          IEEE Consumer Technology Society (CTSoc)
+        </a>, reviewing papers on machine learning, data analysis, and smart cities.
+      </p>
 
-    <p>I am passionate about translating AI research into scalable, real-world solutions that are both ethical and impactful.</p>
+      <p>Beyond research, I’ve taught AI and Python programming and delivered talks at global tech communities such as 
+        <a href="https://gdg.community.dev/" target="_blank" style="color: #005f73; text-decoration: none; font-weight: bold;">Google Developer Group</a>, 
+        <a href="https://reactor.microsoft.com/" target="_blank" style="color: #005f73; text-decoration: none; font-weight: bold;">Microsoft Reactor</a>, and 
+        <a href="https://women.acm.org/" target="_blank" style="color: #005f73; text-decoration: none; font-weight: bold;">ACM Women</a>.
+      </p>
+
+      <p>I am passionate about translating AI research into scalable, real-world solutions that are both ethical and impactful.</p>
+    </div>
+
+    <button onclick="toggleMore()" id="readMoreBtn" style="background: none; border: none; color: #005f73; font-weight: bold; cursor: pointer;">Read more</button>
   </section>
 </div>
 
+<!-- Animation + Toggle Script -->
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+<script>
+  function toggleMore() {
+    const moreText = document.getElementById("more-about");
+    const btn = document.getElementById("readMoreBtn");
+    if (moreText.style.display === "none") {
+      moreText.style.display = "block";
+      btn.innerText = "Show less";
+    } else {
+      moreText.style.display = "none";
+      btn.innerText = "Read more";
+    }
+  }
+</script>  
 
 
 <!-- (Publications, Medium, GitHub, Awards & Footer come here — same as before) -->
