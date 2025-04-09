@@ -50,17 +50,31 @@
   <img src="IMG_5149.jpeg" class="hero-img mb-3" alt="Rahatara Ferdousi"/>
   <h1 class="fw-bold">Rahatara Ferdousi, PhD</h1>
   <p class="lead">AI Researcher | Digital Twin Innovator | Public Speaker</p>
-  <!-- Tech Philosophy -->
-    <style>
-  @keyframes glow {
-    0% { text-shadow: 0 0 5px #0d6efd, 0 0 10px #0d6efd; }
-    50% { text-shadow: 0 0 15px #0d6efd, 0 0 30px #0d6efd; }
-    100% { text-shadow: 0 0 5px #0d6efd, 0 0 10px #0d6efd; }
+ <style>
+  .animated-text span {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeInLetter 1.2s forwards;
+  }
+  .animated-text span:nth-child(n) {
+    animation-delay: calc(0.05s * var(--i));
+  }
+  @keyframes fadeInLetter {
+    to {
+      opacity: 1;
+    }
   }
 </style>
 
-<p style="font-size: 1.25rem; font-weight: 600; color: #0d6efd; animation: glow 2s infinite;">
-  Shaping AI that serves with purpose and responsibility
+<p class="animated-text" style="font-size: 1.25rem; font-weight: 600; color: #0d6efd; margin-top: 10px;">
+  <span style="--i:1">S</span><span style="--i:2">h</span><span style="--i:3">a</span><span style="--i:4">p</span><span style="--i:5">i</span><span style="--i:6">n</span><span style="--i:7">g</span>
+  <span style="--i:8">&nbsp;</span><span style="--i:9">A</span><span style="--i:10">I</span>
+  <span style="--i:11">&nbsp;</span><span style="--i:12">t</span><span style="--i:13">h</span><span style="--i:14">a</span><span style="--i:15">t</span>
+  <span style="--i:16">&nbsp;</span><span style="--i:17">s</span><span style="--i:18">e</span><span style="--i:19">r</span><span style="--i:20">v</span><span style="--i:21">e</span><span style="--i:22">s</span>
+  <span style="--i:23">&nbsp;</span><span style="--i:24">w</span><span style="--i:25">i</span><span style="--i:26">t</span><span style="--i:27">h</span>
+  <span style="--i:28">&nbsp;</span><span style="--i:29">p</span><span style="--i:30">u</span><span style="--i:31">r</span><span style="--i:32">p</span><span style="--i:33">o</span><span style="--i:34">s</span><span style="--i:35">e</span>
+  <span style="--i:36">&nbsp;</span><span style="--i:37">a</span><span style="--i:38">n</span><span style="--i:39">d</span>
+  <span style="--i:40">&nbsp;</span><span style="--i:41">r</span><span style="--i:42">e</span><span style="--i:43">s</span><span style="--i:44">p</span><span style="--i:45">o</span><span style="--i:46">n</span><span style="--i:47">s</span><span style="--i:48">i</span><span style="--i:49">b</span><span style="--i:50">i</span><span style="--i:51">l</span><span style="--i:52">i</span><span style="--i:53">t</span><span style="--i:54">y</span>
 </p>
     <div class="d-flex justify-content-center gap-3 flex-wrap mt-3">
   <a href="https://github.com/turna1" class="btn btn-outline-dark btn-sm">GitHub</a>
